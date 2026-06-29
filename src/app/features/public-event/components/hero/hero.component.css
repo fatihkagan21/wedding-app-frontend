@@ -1,5 +1,7 @@
 .hero {
-  min-height: 92vh;
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,7 +242,7 @@ h1 span {
 
 @media (max-width: 600px) {
   .hero {
-    min-height: 96vh;
+    min-height: 100vh;
     padding: 42px 16px 52px;
   }
 

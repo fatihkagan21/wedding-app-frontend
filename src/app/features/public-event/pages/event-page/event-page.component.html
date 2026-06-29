@@ -17,10 +17,10 @@
 
   @if (event && !loading) {
     <app-hero [event]="event"></app-hero>
+    <app-location [event]="event"></app-location>
 
     <app-event-details [event]="event"></app-event-details>
 
-    <app-location [event]="event"></app-location>
 
     <section id="rsvp">
       <app-rsvp-form [eventId]="event.id"></app-rsvp-form>

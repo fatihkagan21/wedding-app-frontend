@@ -1,5 +1,43 @@
 .event-page {
+  height: 100vh;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-lilac) var(--color-cream);
+}
+
+.event-page::-webkit-scrollbar {
+  width: 8px;
+}
+
+.event-page::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+.event-page::-webkit-scrollbar-thumb {
+  background: var(--color-lilac);
+  border-radius: var(--radius-pill);
+}
+
+.event-page > app-hero,
+.event-page > app-event-details,
+.event-page > app-location,
+.event-page > #rsvp,
+.event-page > .footer,
+.loading,
+.error-state {
+  display: block;
   min-height: 100vh;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.event-page > #rsvp {
+  overflow-y: auto;
+  background: var(--color-cream);
 }
 
 .loading {
@@ -58,6 +96,10 @@
   text-align: center;
   background: linear-gradient(135deg, #302638 0%, #4d3659 100%);
   color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-ornament {

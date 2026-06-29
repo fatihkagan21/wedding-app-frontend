@@ -5,10 +5,16 @@
     var(--color-blush-light) 0%,
     var(--color-cream) 100%
   );
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
 }
 
 .rsvp-card {
   max-width: 560px;
+  width: 100%;
   margin: 0 auto;
   background: var(--color-white);
   padding: 48px 40px;

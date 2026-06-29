@@ -1,11 +1,17 @@
 .details {
   padding: var(--section-padding);
   background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-blush-light) 100%);
+  min-height: 100vh;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
 }
 
 .details-inner {
   max-width: 720px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .story-card {
